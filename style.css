@@ -57,3 +57,11 @@ div{
     border-radius: 100%;
     margin-right: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+           
+    #contenedorPoke{
+        margin-top: 0;
+    }
+
+}
