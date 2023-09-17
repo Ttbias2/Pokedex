@@ -7,7 +7,6 @@ const stats = document.querySelectorAll(".stats");
 const contenedorPoke = document.getElementById("contenedorPoke");
 
 bBuscar.addEventListener("click", cambiarNombre);
-bBuscar.addEventListener("touchend", cambiarNombre);
 
 async function cambiarNombre() {
     let nombre = ittPoke.value;
