@@ -10,6 +10,7 @@ bBuscar.addEventListener("click", cambiarNombre);
 
 async function cambiarNombre() {
     let nombre = ittPoke.value;
+    nombre = nombre. toLowerCase();
     const url = `https://pokeapi.co/api/v2/pokemon/${nombre}/`;
 
     try{
