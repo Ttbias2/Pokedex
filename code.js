@@ -6,6 +6,17 @@ const numPoke = document.getElementById("numPoke");
 const stats = document.querySelectorAll(".stats");
 const contenedorPoke = document.getElementById("contenedorPoke");
 
+// Agregar un evento al campo de entrada
+ittPoke.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        // Evitar el comportamiento predeterminado del Enter (enviar el formulario)
+        event.preventDefault();
+        
+        // Llamar a la función para realizar la búsqueda
+        cambiarNombre();
+    }
+});
+
 bBuscar.addEventListener("click", cambiarNombre);
 
 async function cambiarNombre() {
